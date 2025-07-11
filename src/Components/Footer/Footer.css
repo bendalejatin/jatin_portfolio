@@ -1,0 +1,28 @@
+.footer {
+  background-color: #0d0d0d;
+  padding: 24px 16px;
+  text-align: center;
+  color: #71717a;
+  font-size: 0.9rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+
+  .contact-subtext {
+    font-size: 0.95rem;
+  }
+}

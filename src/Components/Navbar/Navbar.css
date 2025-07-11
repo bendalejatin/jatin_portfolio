@@ -1,0 +1,158 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0a0f1c;
+  color: white;
+}
+
+/* Navbar base */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  background-color: #0a0f1c;
+  transition: all 0.4s ease;
+}
+
+/* Glass effect when scrolled */
+.navbar.scrolled {
+  background: rgba(10, 15, 28, 0.6);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Main container inside navbar */
+.navbar-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #4f8df5, #aa4fe3);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Desktop navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 4px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f8df5;
+}
+
+/* Framer Motion underline */
+.underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #4f8df5, #aa4fe3);
+}
+
+/* Resume button */
+.resume-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile menu drawer */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 75%;
+  background-color: #0a0f1c;
+  padding: 80px 20px;
+  z-index: 1001;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links,
+  .resume-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

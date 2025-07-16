@@ -3,7 +3,7 @@
   color: white;
   text-align: center;
   padding: 60px 16px 40px;
-  max-width: 900px;
+  /* max-width: 900px;   */
   margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@
   margin-bottom: 10px;
 }
 
-.gradient-text {
+.gradient-text-testimonial {
   background: linear-gradient(to right, #36d1dc, #5b86e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -36,6 +36,7 @@
   min-height: 250px;
   margin: 0 auto;
   overflow: hidden;
+  max-width: 900px;
 }
 
 .testimonial-content {

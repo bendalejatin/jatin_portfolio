@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './skills.css';
+import './Skills.css';
 
 const skillsData = [
   { category: "Technical Skills", skills: "C, Python, Java" },
@@ -12,7 +12,7 @@ const skillsData = [
   { category: "Soft Skills", skills: "Communication, Team work, Time Management, Attention to Detail" },
 ];
 
-const SkillsSection = () => {
+const Skills = () => {
   return (
     <motion.section
       className="skills-section"
@@ -33,4 +33,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default Skills;

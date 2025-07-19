@@ -9,7 +9,7 @@ import Certifications from './Components/Certifications/Certifications';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact';
-import Skills from './Components/Skills/Skills';
+// import Skills from './Components/Skills/skills';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
-      <Skills/>
+      {/* <Skills/> */}
       <Experience/>
       <Projects/>
       <Education/>

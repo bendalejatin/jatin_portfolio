@@ -25,7 +25,7 @@ const DURATION = 8000; // 8 seconds for full progress
 const TestimonialSlider = () => {
   const [index, setIndex] = useState(0);
   const [progress, setProgress] = useState(0);
-  const progressRef = useRef(null);
+  // const progressRef = useRef(null);
 
   useEffect(() => {
     const start = Date.now();

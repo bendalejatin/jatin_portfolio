@@ -67,6 +67,16 @@ const skillCategories = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
@@ -81,8 +91,15 @@ const Skills = () => {
       </motion.h2>
 
       <div className="skills-grid-container">
-        {skillCategories.map((category) => (
-          <div className="flip-card" key={category.category}>
+        {skillCategories.map((category, index) => (
+          <motion.div
+            className="flip-card"
+            key={category.category}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <div className="flip-card-inner">
               {/* Front */}
               <div className="flip-card-front skill-category-card">
@@ -101,7 +118,7 @@ const Skills = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

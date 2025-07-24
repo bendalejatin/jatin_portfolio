@@ -62,6 +62,7 @@ const Navbar = () => {
             className="resume-btn"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05, boxShadow: "0 0 8px #ffffff22" }}
+            onClick={() => window.open("/JatinBendale_Resume.pdf", "_blank")}
           >
             📄 Resume
           </motion.button>

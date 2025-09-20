@@ -5,17 +5,17 @@ import './Testimonials.css';
 const testimonials = [
   {
     text: "Working with Jatin was a game-changer for our startup. He built a robust full-stack application using the MERN stack that perfectly aligned with our business needs. His problem-solving skills and dedication are remarkable.",
-    name: "Rahul Patel",
+    name: "acb",
     rating: 5
   },
   {
     text: "Jatin’s expertise in React helped us revamp our entire frontend. He was responsive, professional, and always one step ahead.",
-    name: "Ayesha Khan",
+    name: "ABc",
     rating: 5
   },
   {
     text: "His attention to detail and clean code made integration seamless. Highly recommend working with him!",
-    name: "Dev Mehra",
+    name: "Xyz",
     rating: 5
   }
 ];

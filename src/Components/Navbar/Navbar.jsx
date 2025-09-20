@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
+import logo from "../Assets/jblogo.png";
 
 const links = ["Home", "About", "Skills", "Experience", "Projects", "Education", "Contact"];
 
@@ -33,7 +34,9 @@ const Navbar = () => {
     >
       <div className="navbar-container">
         <div className="logo">
-          <div className="logo-icon">JB</div>
+          <div className="logo-icon">
+            <img src={logo} alt="Logo" />
+          </div>
           <span>Jatin Bendale</span>
         </div>
 

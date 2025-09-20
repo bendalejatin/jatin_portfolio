@@ -52,12 +52,17 @@ body {
 }
 
 .logo-icon {
-  background: linear-gradient(135deg, #4f8df5, #aa4fe3);
+  /* background: linear-gradient(135deg, #4f8df5, #aa4fe3); */
   color: #fff;
   font-weight: 700;
   padding: 8px 12px;
   border-radius: 12px;
   font-size: 14px;
+}
+
+.logo-icon img {
+  width: 35px;
+  height: 35px;
 }
 
 /* Desktop navigation links */

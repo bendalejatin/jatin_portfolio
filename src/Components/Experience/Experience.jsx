@@ -5,11 +5,25 @@ import "./Experience.css";
 
 const experiences = [
   {
+    title: "Backend Developer",
+    company: "Matlab Infotech",
+    location: "Surat, Gujarat",
+    period: "Sep 2025 - current",
+    current: true,
+    points: [
+      "Led two live ReactJS-based projects, overseeing end-to-end development",
+      "Spearheaded MERN stack application design and deployment with MUI library",
+      "Demonstrated leadership in ReactJS and full-stack project management",
+      "Collaborated with cross-functional teams to optimize performance",
+    ],
+    tech: ["Node.js", "MongoDB", "Express.js","MySQL", "Typescript"],
+  },
+  {
     title: "Full Stack Developer",
     company: "Dec Gaming Studio Pvt Ltd",
     location: "Vadodra, Gujarat",
     period: "Aug 2024 - May 2025",
-    current: true,
+    current: false,
     points: [
       "Led two live ReactJS-based projects, overseeing end-to-end development",
       "Spearheaded MERN stack application design and deployment with MUI library",

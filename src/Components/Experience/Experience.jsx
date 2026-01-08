@@ -11,10 +11,8 @@ const experiences = [
     period: "Sep 2025 - current",
     current: true,
     points: [
-      "Led two live ReactJS-based projects, overseeing end-to-end development",
-      "Spearheaded MERN stack application design and deployment with MUI library",
-      "Demonstrated leadership in ReactJS and full-stack project management",
-      "Collaborated with cross-functional teams to optimize performance",
+      "Learning and implementing new learnings",
+      "working on live projects"
     ],
     tech: ["Node.js", "MongoDB", "Express.js","MySQL", "Typescript"],
   },
